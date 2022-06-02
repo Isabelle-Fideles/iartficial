@@ -1,0 +1,7 @@
+{
+  "name": "iARTificial",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,26 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+</style>
+<ion-toolbar color="warning">
+  <ion-buttons collapse="true" slot="end">
+    <ion-button (click)="abrirHome()">
+      <ion-icon slot="icon-only" name="close-circle-outline"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+</ion-toolbar>
+<ion-content [fullscreen]="true" color="warning" id="corpo">
+  <p>Seja bem vindo(a) ao <br>
+    <ion-icon name="color-palette-outline"></ion-icon>
+    I <strong>ART</strong>ficial
+    <ion-icon name="color-palette-outline"></ion-icon>
+    <br>
+    <br>
+  </p>
+  <div style="font-size: 35px;">Será que uma IA consegue desenhar o que você digitar?
+
+  </div>
+  <br>
+  <div style="font-size: 30px;">Vamos ver!!!<br> <strong>Aproveite ;D</strong> </div>
+  <ion-button color="dark" (click)="abrirHome()"> Começar <ion-icon name="color-palette-outline"></ion-icon>
+  </ion-button>
+</ion-content>

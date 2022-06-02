@@ -1,0 +1,32 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+</style>
+<ion-header [translucent]="true">
+  <ion-toolbar color="warning">
+    <ion-buttons collapse="true" slot="start">
+      <ion-button (click)="abrirHome()">
+        <ion-icon name="arrow-back-circle-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title class="toolbar">
+      <ion-icon name="color-palette-outline"></ion-icon>
+      <strong>Resultado</strong>
+      <ion-icon name="color-palette-outline"></ion-icon>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="light">
+  <div id="container">
+    <br>
+    <ion-item class="result">
+      <img  src="{{ path }}" alt="resultado">
+    </ion-item>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="warning">
+    <ion-title class="toolbar">Desenvolvido por: Isabelle Fideles </ion-title>
+  </ion-toolbar>
+</ion-footer>

@@ -1,0 +1,44 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+</style>
+<ion-header [translucent]="true">
+  <ion-toolbar color="warning">
+    <ion-title class="toolbar">
+      <ion-icon name="color-palette-outline"></ion-icon>
+      I <strong>ART</strong>ficial
+      <ion-icon name="color-palette-outline"></ion-icon>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" color="light">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">I ARTficial</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div id="container">
+    <strong>
+      <p>Digite uma palavra:</p>
+    </strong> <br>
+    <ion-item color="warning" id="corpo">
+
+      <ion-input type="text" [(ngModel)]="resultado" placeholder="Ex: flor"></ion-input>
+    </ion-item>
+    <br>
+    <ion-button color="warning" (click)="abrirCarregamento()"> Enviar <ion-icon name="send-outline"></ion-icon>
+    </ion-button>
+  </div>
+</ion-content>
+<ion-footer>
+
+</ion-footer>
+<ion-footer>
+  <ion-toolbar color="warning">
+    <ion-buttons collapse="true" slot="end">
+      <ion-button slot="end" (click)="abrirAjuda()">
+        <ion-icon name="help-circle-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
